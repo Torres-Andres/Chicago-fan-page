@@ -1,16 +1,28 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
     <head>
-       	<link rel='stylesheet' href='style.css'/>
-	<script src='script.js'></script> 
-    
+       	<link rel='stylesheet' href='style.css'/> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
     </head>
 <title> Chicago </title>
     <body>
 <ul>
-  <li><a href="#team">Sports Teams</a></li>
-  <li><a href="#people">Famous People</a></li>
-    <li><a href="#food">Food</a></li>
+  <li><a href="http://127.0.0.1:49359/sportss.html">Sports Teams</a></li>
+  <li><a href="http://127.0.0.1:49359/famous.html">Famous People</a></li>
+    <li><a href="http://127.0.0.1:49359/index.html">Attractions</a></li>
 </ul>
         <div class="container">
 <div class="A">
@@ -26,10 +38,75 @@
         <img class="thumbnail" src="data:image/png;base64,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"> 
     </figure>
 </div>
+
+<body>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOnNlhRAuPlD4vO5hHNDTOJmPycSWHfMPU-YwYx9cf9odM30aD" alt="chicago" width="460" height="345">                                            
+        <div class="carousel-caption">
+          <h3>Chicago Skyline</h3>
+          <p>A dull picture of Chicagos' skyline.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcEpmbaTlUE110LOQTdSzQxthLY7XRa7I98SmKbld16Y5EimAjQ" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>A more lit photo of Chicago.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcUZnvT8SK1VGbo85D4H5iKjCk3-hAaCSvtAtF6Cc5LLbBhN163A" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Black and White</h3>
+          <p>Old photo of Chicago.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR9OrJC8zn-Jjiu4jaC2nozauJtAq6VW4O5EAuJ_5m6RbHSXvuAg" alt="Plain Chicago" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>A nice picture of Chicago.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
 <div class=".C">
     <div class="container">
         <h2>Why I like Chicago</h2>
             <p>I like to think of Chicago as my family in a way. We have our ups and downs but at the end of the day im still here. Chicago has never really done me any bad/good. I guess one can describe my relationship with Chicago as neutral. People say Chicago is a violent city, and it is true, but that mostly depends what part you are in.</p>
+        <button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button>
         </div>
     </div>
 <div class=".D">
@@ -56,7 +133,9 @@
   <p>Posted by: Andres Torres</p>
   <p>Contact information: <a href="google.com">andres.torres@speeracademy.org</a></p>
 </footer>
-</div>
-</div>
+         <script type="text/javascript" src="script.js"></script>
 </body>
+            </div>
+        </div>
+    </body>
 </html>

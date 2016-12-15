@@ -117,3 +117,7 @@ li a:hover {
       border:1px solid #cccccc;
       background:#ffffff; 
 }
+.item {
+    width: 1154px;
+    height: 375px;
+}
